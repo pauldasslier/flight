@@ -1,0 +1,36 @@
+{
+  "name": "amirdent",
+  "version": "1.0.0",
+  "description": "This is the site of Moscow medical center",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "path": "^0.12.7",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/pauldasslier/amirdent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/pauldasslier/amirdent/issues"
+  },
+  "homepage": "https://gitlab.com/pauldasslier/amirdent#readme"
+}
