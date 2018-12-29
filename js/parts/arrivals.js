@@ -1,8 +1,12 @@
 function arrival() {
   let xhr = new XMLHttpRequest();
 
-  function parseSheduleArr(sheduleArr) {
-    console.log(sheduleArr);
+  function parseSheduleArr(sheduleDep) {
+    arrData = sheduleArr;
+
+    let planes = require('./schedule.js');
+
+    planes(arrData);
   }
 
   xhr.open('GET', 'arrival.json', true);
@@ -19,7 +23,6 @@ function arrival() {
       parseSheduleArr(sheduleArr);
     }
   }
-
 
 }
 
