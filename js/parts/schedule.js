@@ -1,8 +1,10 @@
 function schedule() {
+  let insertTable = require('./createTable.js');
+  insertTable();
 
   function planes(data) {
-    const table = document.querySelector('tbody');
-    let tableRow = table.querySelector('.schedule__row');
+    let table = document.querySelector('.schedule__table');
+    let tableRow = document.querySelector('.schedule__row');
 
     for (let i = 0; i < data.schedule.length; i++) {
       let cloneRow = tableRow.cloneNode(true);
@@ -18,13 +20,12 @@ function schedule() {
       }
 
       random();
-      table.appendChild(cloneRow);
+      table.insertBefore(cloneRow, tableRow);
     }
 
     function random() {
       let num = Math.random();
       num = num.toFixed(1);
-      console.log(num);
 
       if (data.event == 'departure') {
         if (num < 0.2) {

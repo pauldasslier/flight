@@ -10,66 +10,17 @@
   <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-  <div class="header">
-      <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="header__block">
-                №
-              </div>
-            </div>
-            <div class="col">
-              <div class="header__block">
-                Company
-              </div>
-            </div>
-            <div class="col">
-              <div class="header__block">
-                From
-              </div>
-            </div>
-            <div class="col">
-              <div class="header__block">
-                Time
-              </div>
-            </div>
-            <div class="col">
-              <div class="header__block">
-                Plane
-              </div>
-            </div>
-            <div class="col">
-              <div class="header__block">
-                Status
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="header__switch">
-                <button id="arrival-btn">Прибытие</button>
-                <button id="departure-bnt">Вылет</button>
-              </div>
-            </div>
-          </div>
-        </div>
-  </div>
   <div class="schedule">
     <div class="container">
       <div class="row">
         <div class="col">
-          <tbody>
-            <table class="schedule__table">
-              <tr class="schedule__row">
-                <td class="schedule__ceil"></td>
-                <td class="schedule__ceil"></td>
-                <td class="schedule__ceil"></td>
-                <td class="schedule__ceil"></td>
-                <td class="schedule__ceil"></td>
-                <td class="schedule__ceil"></td>
-              </tr>
-            </table>
-          </tbody>
+          <div class="schedule__switch">
+            <form action="">
+              <input type="text" id="search" placeholder="Введите № рейса">
+              <span><input type="radio" name="switch" id="switch-arr">Прилет</span>
+              <span><input type="radio" name="switch" id="switch-dep">Вылет</span>
+            </form>
+          </div>
         </div>
       </div>
     </div>
