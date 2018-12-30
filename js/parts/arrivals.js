@@ -1,11 +1,14 @@
 function arrival() {
+  
   let xhr = new XMLHttpRequest();
 
   function parseSheduleArr(sheduleDep) {
     arrData = sheduleArr;
 
+    // Импортируем функцию формирования табло
     let planes = require('./schedule.js');
 
+    // Инициируем функцию формирования табло с данными прилетов
     planes(arrData);
   }
 

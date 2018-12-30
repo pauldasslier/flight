@@ -1,10 +1,11 @@
 function createTable() {
+
   function insertTable() {
+
     let scheduleDiv = document.querySelector('.schedule');
     let scheduleDivCol = scheduleDiv.querySelector('.col');
     let table = document.createElement('table');
     let tableRow = document.createElement('tr');
-    let tableCeil = document.createElement('td');
   
     table.classList.add('schedule__table');
     tableRow.classList.add('schedule__row');

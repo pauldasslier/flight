@@ -1,14 +1,15 @@
 function departure() {
 
-
   let depData = {};
   let xhr = new XMLHttpRequest();
 
   function parseSheduleDep(sheduleDep) {
     depData = sheduleDep;
 
+    // Импортируем функцию формирования табло
     let planes = require('./schedule.js');
-
+    
+    // Инициируем функцию формирования табло с данными прилетов
     planes(depData);
   }
 
