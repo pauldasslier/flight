@@ -17,8 +17,18 @@
           <div class="schedule__switch">
             <form action="">
               <input type="text" id="search" placeholder="Введите № рейса">
-              <span><input type="radio" name="switch" id="switch-arr">Прилет</span>
-              <span><input type="radio" name="switch" id="switch-dep">Вылет</span>
+              <div class="radio-container">
+                <input type="radio" name="switch" class="radio-btn" id="switch-arr">
+                <label for="switch-arr">Прилет</label>
+              </div>
+              <div class="radio-container">
+                <input type="radio" name="switch" class="radio-btn" id="switch-dep">
+                <label for="switch-dep">Вылет</label>
+              </div>
+              <div class="check-container">
+                <input type="checkbox" id="status-check">
+                <label for="status-check">Показать задержанные</label>
+              </div>
             </form>
           </div>
         </div>

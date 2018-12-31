@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const switcher = require('./parts/switcher.js');
   const createTable = require('./parts/createTable.js');
   const search = require('./parts/search.js');
+  const getDelayed = require('./parts/delayed.js');
 
   createTable();
   switcher();
@@ -14,5 +15,6 @@ window.addEventListener('DOMContentLoaded', () => {
   departure();
   schedule();
   search();
+  getDelayed();
   
 })
